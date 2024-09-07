@@ -1,0 +1,41 @@
+/* styles.css */
+
+/* Styles for the media popup */
+#media-popup {
+    position: fixed;
+    top: 10px; /* Position at the top */
+    right: 10px; /* Position at the right */
+    width: 320px;
+    height: 240px;
+    background-color: #fff; /* Set background to white */
+    color: #000; /* Set text color to black */
+    z-index: 10000;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    cursor: move; /* Make the whole window draggable */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Tooltip styles */
+  .tooltip1 {
+    content: attr(data-text);
+    border-radius: 8px;
+    position: relative; /* Position relative to the pop-up */
+    font-family: Arial, sans-serif; /* Add a fallback font */
+    background: #fff9de;
+    color: #2196F3; /* Change text color to blue */
+    font-size: 1em;
+    width: max-content;
+    line-height: 1.25em;
+    max-width: 100%;
+    z-index: 2;
+    padding: .5rem 1rem;
+    box-shadow: 0 0 5px #fce68d;
+    pointer-events: none; /* Prevent pointer events */
+    margin-bottom: 10px; /* Add space below the tooltip */
+  }
+  
